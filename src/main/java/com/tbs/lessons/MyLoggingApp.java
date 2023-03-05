@@ -17,6 +17,7 @@ public class MyLoggingApp {
         logger.trace("I am writing a TRACE message");
 
         // examples of why you would log things
+        /*
         Calculator calculator = new Calculator();
         logger.info("Calling calculator to get correct result...");
         int roomSqFt = calculator.calculateSquareFootage(10, 20);
@@ -33,6 +34,7 @@ public class MyLoggingApp {
         } else {
             logger.error("Calculator sucks and is wrong");
         }
+        */
     }
 
 

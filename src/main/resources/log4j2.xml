@@ -4,12 +4,12 @@
         <Property name="basePath">logs</Property>
     </Properties>
     <Appenders>
-        <RollingFile name="fileLogger" fileName="${basePath}/myApp.log" filePattern="${basePath}/myApp-%d{yyyy-MM-dd}.log">
-            <PatternLayout pattern="[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n" />
-            <Policies>
-                <TimeBasedTriggeringPolicy interval="1" modulate="true" />
-            </Policies>
-        </RollingFile>
+<!--        <RollingFile name="fileLogger" fileName="${basePath}/myApp.log" filePattern="${basePath}/myApp-%d{yyyy-MM-dd}.log">-->
+<!--            <PatternLayout pattern="[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n" />-->
+<!--            <Policies>-->
+<!--                <TimeBasedTriggeringPolicy interval="1" modulate="true" />-->
+<!--            </Policies>-->
+<!--        </RollingFile>-->
 
         <Console name="console" target="SYSTEM_OUT">
             <PatternLayout pattern="[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n" />
@@ -18,7 +18,7 @@
     <Loggers>
         <Root level="INFO">
             <AppenderRef ref="console"/>
-            <AppenderRef ref="fileLogger"/>
+            <!-- <AppenderRef ref="fileLogger"/> -->
         </Root>
     </Loggers>
 </Configuration>
